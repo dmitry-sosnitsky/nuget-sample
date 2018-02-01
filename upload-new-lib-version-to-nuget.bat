@@ -2,6 +2,8 @@ del *.nupkg
 del *.nuspec
 del NugetExperiments.ClassLibraries\NugetExperiments.ClassLibrary\*.nuspec
 
+nuget.exe restore NugetExperiments.ClassLibraries\NugetExperiments.ClassLibraries.sln
+
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild.exe NugetExperiments.ClassLibraries\NugetExperiments.ClassLibrary\NugetExperiments.ClassLibrary.csproj /t:rebuild 
 
 cd NugetExperiments.ClassLibraries\NugetExperiments.ClassLibrary
